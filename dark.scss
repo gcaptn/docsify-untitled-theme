@@ -1,0 +1,65 @@
+$accent: #6196fa;
+$fg-main: #d5d5d5;
+$fg-secondary: #ccc;
+$fg-quote: #858585;
+$bg-main: #181818;
+$bg-secondary: #252525;
+$bg-scroll: #454545;
+$border-table: #353535;
+$border-main: #303030;
+$tip-main: #d19d3d;
+$tip-bg: #312b1f;
+$important-main: #cc4848;
+$important-bg: #312121;
+
+$code-comment: #8e908c;
+$code-boolean: #c76b29;
+$code-number: #c76b29;
+$code-punctuation: $fg-secondary;
+$code-property: #c08b30;
+$code-tag: #2973b7;
+$code-string: #42b983;
+$code-selector: #6679cc;
+$code-attr-name: #2973b7;
+$code-attr-value: #22a2c9;
+$code-keyword: #e96900;
+$code-function: #e96900;
+$code-regex: #22a2c9;
+$code-variable: #3d8fd1;
+$code-important: #c94922;
+
+@use "core";
+
+@include core.core(
+  $accent,
+  $fg-main,
+  $fg-secondary,
+  $fg-quote,
+  $bg-main,
+  $bg-secondary,
+  $bg-scroll,
+  $border-table,
+  $border-main,
+  $tip-main,
+  $tip-bg,
+  $important-main,
+  $important-bg
+);
+
+@include core.code(
+  $code-comment,
+  $code-boolean,
+  $code-number,
+  $code-punctuation,
+  $code-property,
+  $code-tag,
+  $code-string,
+  $code-selector,
+  $code-attr-name,
+  $code-attr-value,
+  $code-keyword,
+  $code-function,
+  $code-regex,
+  $code-variable,
+  $code-important
+);
